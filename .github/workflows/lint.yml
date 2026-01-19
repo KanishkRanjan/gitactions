@@ -1,0 +1,8 @@
+name: Lint job
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run lint
+        run: npm run lint

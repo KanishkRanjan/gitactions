@@ -1,0 +1,8 @@
+name: deploy job
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run deploy
+        run: npm run deploy
